@@ -1,7 +1,7 @@
 package com.epam.jwd.task1.logic;
 
+import com.epam.jwd.task1.obj.ComfortTaxi;
 import com.epam.jwd.task1.obj.TaxiPark;
-import com.epam.jwd.task1.obj.TaxiPark.ComfortTaxi;
 
 public class LogisticCenter {
 
@@ -41,10 +41,10 @@ public class LogisticCenter {
             for (int i = 0; i < List.length - 1 - q; i++) {
                 if (List[i].getFuelConsumption() > List[i + 1].getFuelConsumption()) {
                     double temp1 = List[i].getFuelConsumption();
-                    List[i].fuelConsumption= List[i + 1].fuelConsumption;
+                    List[i].fuelConsumption= List[i + 1].getFuelConsumption();
                     List[i + 1].fuelConsumption = temp1;
                     String temp2 = List[i].getModel();
-                    List[i].model = List[i + 1].model;
+                    List[i].model = List[i + 1].getModel();
                     List[i + 1].model = temp2;
                 }
             }

@@ -1,14 +1,15 @@
 package com.epam.jwd.task1.logic;
 
 import com.epam.jwd.task1.data.TaxiData;
+import com.epam.jwd.task1.obj.ComfortTaxi;
 import com.epam.jwd.task1.obj.TaxiPark;
-import com.epam.jwd.task1.obj.TaxiPark.ComfortTaxi;
+
 import com.epam.jwd.task1.printer.Printer;
 
 public class Main {
     public static final int MAX_SPEED =211;
     public static final int MIN_SPEED = 199;
-    public static final String COLOUR = "Black";
+    public static final String COLOUR = "Blue";
     public static void main(String[] args) {
         TaxiPark[] array = TaxiData.List();
         ComfortTaxi[] array1 = TaxiData.List1();
